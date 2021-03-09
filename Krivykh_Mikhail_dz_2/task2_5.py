@@ -18,7 +18,6 @@ print ('list_ID: ',id(list))
 for i in range(len(list)):
     list[i] = float(f'{list[i]:0.2f}')
     priceInStr = str(list[i])
-    #list[i] = f" {list[i].split('.')[0]} руб {list[i].split('.')[1] } коп"
     result += f" {priceInStr.split('.')[0]} руб {priceInStr.split('.')[1] } коп, "
 
 print(list,id(list))
@@ -27,4 +26,4 @@ list.sort()
 print ('В: ', list, '\nlist_B_ID: ' , id(list))
 new_List = sorted(list,reverse=True)
 print('C: ', new_List, '\nnew_List_C_ID: ' , id(new_List))
-print('D: ', new_List[5::-1], '\nnew_List_C_ID: ' , id(new_List))
+print('D: ', new_List[5::-1], '\nnew_List_D_ID: ' , id(new_List))
